@@ -11,8 +11,8 @@ import cv2
 import matplotlib
 from matplotlib import pyplot as plt
 
-imgL = cv2.imread('/content/drive/My Drive/StereoImages/Left.png',0)
-imgR = cv2.imread('/content/drive/My Drive/StereoImages/Right.png',0)
+imgL = cv2.imread('./Left.png',0)
+imgR = cv2.imread('./Right.png',0)
 
 stereo = cv2.StereoBM_create(16, 15)
 disparity = stereo.compute(imgL, imgR)
