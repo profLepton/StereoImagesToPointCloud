@@ -19,5 +19,5 @@ disparity = stereo.compute(imgL, imgR)
 
 plt.imshow(disparity, 'gray')
 
-cv2.imwrite('./content/drive/My Drive/StereoImages/disparity.png', disparity )
+cv2.imwrite('./disparity.png', disparity )
 
